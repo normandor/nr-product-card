@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0-rc",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -34,16 +34,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "nr-product-card",
-  "author": "Fernando Herrera",
-  "module": "dist/nr-product-card.esm.js",
+  "name": "ndr1-product-card",
+  "author": "Norman Riobo",
+  "module": "dist/ndr1-product-card.esm.js",
   "size-limit": [
     {
-      "path": "dist/nr-product-card.cjs.production.min.js",
+      "path": "dist/ndr1-product-card.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/nr-product-card.esm.js",
+      "path": "dist/ndr1-product-card.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -70,9 +70,7 @@
   },
   "keywords": [
     "product",
-    "card",
-    "fernando",
-    "herrera"
+    "card"
   ],
   "dependencies": {
     
