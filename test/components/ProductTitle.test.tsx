@@ -4,25 +4,17 @@ import { ProductTitle, ProductCard } from '../../src/components';
 import { product1 } from '../data/products';
 
 describe('ProductTitle', () => {
-    test('debe demostrar el componente correctamente con el titulo personalizado', () => {
-        const wrapper = renderer.create(
-            <ProductTitle title="Custom Product" />
-        )
+  test('debe demostrar el componente correctamente con el titulo personalizado', () => {
+    const wrapper = renderer.create(<ProductTitle title="Custom Product" />);
 
-        expect(wrapper.toJSON()).toMatchSnapshot();
-    });
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
 
-    test('debe demostrar el componente con el nombre del producto', () => {
-        const wrapper = renderer.create(
-            <ProductCard product={product1}>
-                {
-                    () => (
-                        <ProductTitle />
-                    )
-                }
-            </ProductCard>
-        )
+  test('debe demostrar el componente con el nombre del producto', () => {
+    const wrapper = renderer.create(
+      <ProductCard product={product1}>{() => <ProductTitle />}</ProductCard>
+    );
 
-        expect(wrapper.toJSON()).toMatchSnapshot();
-    })
-})
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+});
